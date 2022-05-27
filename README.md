@@ -8,8 +8,7 @@
 
 ### **1. Descripción del proyecto**
 <a name="about"></a>
-
-About: Descripción del proyecto
+Este proyecto esta realizado para que los directores de la empresa de NorthWind puedan ver la cantidad de gastos que han hecho tenido que hacer sus clientes.
 
 ### **2. Contacto**
 <a name="contacto"></a>
@@ -24,4 +23,4 @@ Licence: licencia con la que distribuyes tu proyecto
 
 ### **4. Referencia**
 <a name="referencia"></a>
-References: referencias utilizadas
+[Descarga base de datos NorthWind](https://gist.github.com/jmalarcon/e98d20735d17b3160766c041060d1902)
