@@ -33,15 +33,17 @@ namespace InterfazGrafica.UC
             this.panel_Base = new System.Windows.Forms.Panel();
             this.but_SeleccionarCliente = new System.Windows.Forms.Button();
             this.comboBox_Clientes = new System.Windows.Forms.ComboBox();
+            this.lab_ListaClientes = new System.Windows.Forms.Label();
             this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.northwindDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.northwindDataSet = new InterfazGrafica.NorthwindDataSet();
-            this.lab_ListaClientes = new System.Windows.Forms.Label();
             this.customersTableAdapter = new InterfazGrafica.NorthwindDataSetTableAdapters.CustomersTableAdapter();
+            this.customersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.panel_Base.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.northwindDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_Base
@@ -75,6 +77,16 @@ namespace InterfazGrafica.UC
             this.comboBox_Clientes.Size = new System.Drawing.Size(150, 21);
             this.comboBox_Clientes.TabIndex = 1;
             // 
+            // lab_ListaClientes
+            // 
+            this.lab_ListaClientes.AutoSize = true;
+            this.lab_ListaClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab_ListaClientes.Location = new System.Drawing.Point(365, 218);
+            this.lab_ListaClientes.Name = "lab_ListaClientes";
+            this.lab_ListaClientes.Size = new System.Drawing.Size(163, 24);
+            this.lab_ListaClientes.TabIndex = 0;
+            this.lab_ListaClientes.Text = "Lista de Clientes";
+            // 
             // customersBindingSource
             // 
             this.customersBindingSource.DataMember = "Customers";
@@ -90,19 +102,14 @@ namespace InterfazGrafica.UC
             this.northwindDataSet.DataSetName = "NorthwindDataSet";
             this.northwindDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // lab_ListaClientes
-            // 
-            this.lab_ListaClientes.AutoSize = true;
-            this.lab_ListaClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lab_ListaClientes.Location = new System.Drawing.Point(365, 218);
-            this.lab_ListaClientes.Name = "lab_ListaClientes";
-            this.lab_ListaClientes.Size = new System.Drawing.Size(163, 24);
-            this.lab_ListaClientes.TabIndex = 0;
-            this.lab_ListaClientes.Text = "Lista de Clientes";
-            // 
             // customersTableAdapter
             // 
             this.customersTableAdapter.ClearBeforeFill = true;
+            // 
+            // customersBindingSource1
+            // 
+            this.customersBindingSource1.DataMember = "Customers";
+            this.customersBindingSource1.DataSource = this.northwindDataSetBindingSource;
             // 
             // ClientesUC
             // 
@@ -116,6 +123,7 @@ namespace InterfazGrafica.UC
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.northwindDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,5 +139,6 @@ namespace InterfazGrafica.UC
         private System.Windows.Forms.BindingSource northwindDataSetBindingSource;
         private NorthwindDataSet northwindDataSet;
         private NorthwindDataSetTableAdapters.CustomersTableAdapter customersTableAdapter;
+        private System.Windows.Forms.BindingSource customersBindingSource1;
     }
 }

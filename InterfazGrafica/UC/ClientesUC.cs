@@ -43,10 +43,13 @@ namespace InterfazGrafica.UC
             InitializeComponent();
 
             // TODO: Pedir la lista de clientes a la BD 
-            ListaClientes = AccesoDatosDAL.ListadoClientesNorthWind();
+            ListaClientes = ControladorBLL.PedirListaClientes();
 
             // TODO: cargar la lista de clientes en el combobox (la lista la teneis como atributo en este UC)
-            comboBox_Clientes.Items.Add(ListaClientes);
+            for (int i = 0; i < listaClientes.Count; i++)
+            {
+                comboBox_Clientes.Items.Add(i);
+            }
 
         }
         #endregion

@@ -20,6 +20,11 @@ namespace ObjetosTransferencia.DTO
             this.NombreCliente = nombreCliente;
         }
 
+        public ClienteDTO()
+        {
+           
+        }
+
 
         #endregion
 

@@ -86,7 +86,11 @@ namespace DataAccessLayer
                 while (dataReader.Read())
                 {
                     // TODO: parsea los datos a la lista de ClientesDTO (campos 0 y 1 de la BD)
+                    ClienteDTO cliente = new ClienteDTO();
+                    cliente.IDCliente = dataReader.GetValue(0).ToString();
+                    cliente.NombreCliente = dataReader.GetValue(1).ToString();
 
+                    listaClientes.Add(cliente);
                 }
 
                 dataReader.Close();
