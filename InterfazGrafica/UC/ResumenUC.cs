@@ -37,5 +37,11 @@ namespace InterfazGrafica.UC
         }
 
 
+        public ResumenUC() {
+            InitializeComponent();
+
+        }
+
+
     }
 }

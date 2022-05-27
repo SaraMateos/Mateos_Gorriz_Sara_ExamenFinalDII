@@ -105,6 +105,8 @@ namespace InterfazGrafica.Formularios
         {
             // TODO: crea un UC tipo ResumenUC e insertalo en el Dashboard
             panel_BaseDashboard.Controls.Remove(this.listaPedidosUC);
+
+            resumenUC = new ResumenUC();
             panel_BaseDashboard.Controls.Add(this.resumenUC);
 
         }
